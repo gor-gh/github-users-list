@@ -333,7 +333,6 @@ const LoadingAnimation = (props) => {
                 <div></div>
             </div>
 
-            {/*<h3>Loading User's profile</h3>*/}
         </div>
     )
 }
