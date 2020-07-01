@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;;
+}
+/* HEADER PART */
+header{
+    background-color: #24292e;
+    padding: 0px;
+    color: white;
+}
+.back_to_element{
+    cursor: pointer;
+}
+.search_panel{
+    position: relative;
+}
+
+input[type=search]{
+    background-color: #36393a;
+    border-radius: 6px;
+    padding: 5px;
+    border: none;
+    outline: none;
+    display: block;
+    color: rgba(255,255,255,0.8);
+}
+input[type=search]::placeholder{
+    color: rgba(255,255,255,0.5);
+}
+.search_result{
+    position: absolute;
+    top: 60px;
+    background-color: white;
+    color: #24292e;
+    border: 1px solid #24292e;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    padding: 5px;
+    width: 100%;
+}
+.search_item{
+    cursor: pointer;
+
+}
+.search_item > img{
+    width: 30px;
+}
+/* UsersListItem part */
+
+.avatar{
+    width: 35px;
+}
+.user_login:hover{
+    text-decoration: underline;
+}
+.user_list_item_container{
+    border: 1px solid #24292e;
+    border-bottom: none;
+    color: #24292e;
+    border-radius: 6px;
+    font-size: 20px;
+}
+.border_bottom_only{
+    border-bottom: 1px solid #24292e;
+}
+.user_login{
+    color: #24292e;
+    font-size: 20px;
+}
+.cursor_pointer{
+    cursor: pointer;
+}
+/* UsersEditForm part*/
+.edit_window{
+    border-top: 1px solid #24292e5f;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.submit_btn{
+    background-color: #24292e;
+}
+
+
+/* UserProfile part*/
+
+.profile_pic{
+    width: 300px;
+    border-radius: 100%;
+}
+
+    /* Repo part*/
+    .repo{
+        border-top: 1px solid #e1e4e8;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    .repos_cont{
+        border-bottom: 1px solid #e1e4e8;
+    }
+    .language_badge{
+        width: 13px;
+        height: 13px;
+        border-radius: 100%;
+    }
+
+
+@media screen and (max-width: 600px){
+    header{
+        flex-direction: column;
+        padding-bottom: 10px;
+    }
+    header > div{
+        justify-content: center;
+    }
+
+
+}
+@media screen and (max-width: 992px){
+    .repos_cont{
+        margin-top: 20px;
+        padding-top: 30px;
+        border-top: 1px dotted #24292e;
+    }
+}
+@media screen and (max-width: 770px){
+    .repo_name{
+        font-size: 1.5rem;
+    }
+}

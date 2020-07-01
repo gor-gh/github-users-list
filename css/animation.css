@@ -1,0 +1,65 @@
+.animation_element{
+    position: relative;
+    top: 150px;
+}
+.animation_element > div{
+    position: absolute;
+    background-color: #24292e;
+    width: 30px;
+    height: 30px;
+}
+.animation_element > div:first-child{
+    top: 0;
+    left: 0;
+    animation: rotating1 2s infinite;
+}
+.animation_element > div:last-child{
+    top: 30px;
+    left: 30px;
+    animation: rotating2 2s infinite;
+}
+@keyframes rotating1 {
+    0%{
+        top: 0px;
+        left: 0px;
+    }
+    25%{
+        top: 0px;
+        left: 30px;
+    }
+    50%{
+        top: 30px;
+        left: 30px;
+    }
+    75%{
+        top: 30px;
+        left: 0px;
+    }
+    100%{
+        top: 0px;
+        left: 0px;
+    }
+}
+@keyframes rotating2 {
+    0%{
+        top: 30px;
+        left: 30px;
+    }
+
+    25%{
+        top: 30px;
+        left: 0px;
+    }
+    50%{
+        top: 0px;
+        left: 0px;
+    }
+    75%{
+        top: 0px;
+        left: 30px;
+    }
+    100%{
+        top: 30px;
+        left: 30px;
+    }
+}
