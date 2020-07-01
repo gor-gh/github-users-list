@@ -131,3 +131,11 @@ input[type=search]::placeholder{
         font-size: 1.5rem;
     }
 }
+@media screen and (max-width: 590px){
+    .repo_name{
+        font-size: 1rem;
+    }
+    ․repo_descr{
+        font-size: 0.6rem!important;
+    }
+}
